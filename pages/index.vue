@@ -2,7 +2,7 @@
     <div class="w-screen h-screen bg-black"
         :style="{ 'background-image': 'url(' + artwork + ')', 'background-size': 'cover', 'background-repeat': 'no-repeat', 'background-position': 'center' }">
         <div
-            class="p-4 flex justify-center items-center overflow-y-auto overflow-x-hidden fixed top-0 right-0 left-0 z-50 justify-center items-center w-full md:inset-0 h-modal md:h-full">
+            class="p-4 flex justify-center items-center overflow-y-auto overflow-x-hidden fixed top-0 right-0 left-0 z-50 justify-center items-center w-full md:inset-0 h-modal md:h-full pt-28">
             <div class="relative w-full max-w-2xl h-full md:h-auto">
                 <div class="relative p-4 bg-white rounded-lg shadow dark:bg-gray-800 sm:p-5">
                     <div
