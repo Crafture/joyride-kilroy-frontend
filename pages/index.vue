@@ -34,6 +34,9 @@
                     </div>
                     <form @submit="handleSubmit">
                         <div class="grid gap-4 mb-4 sm:grid-cols-2">
+                            <div class="sm:col-span-2 dark:text-white text-sm">
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores numquam ab, voluptate autem, officia ullam eos expedita tempora, voluptas minima similique ipsa dolore! Non molestias laboriosam omnis atque numquam corrupti.
+                            </div>
                             <div>
                                 <label for="first_name"
                                     class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Voornaam</label>
@@ -88,11 +91,15 @@
                             </div>
 
                         </div>
-                        <button type="submit" class="py-2 px-8 text-white bg-blue-700 rounded-sm">
-                            Registreren
-                        </button>
+                        <div class="flex justify-between items-center">
+                            <button type="submit" class="py-2 px-8 text-white bg-blue-700 rounded-sm">
+                                Registreren
+                            </button>
+                            <img class="h-10" :src="kilroy" />
+                        </div>
                     </form>
                 </div>
+                <img class="mt-8 md:mt-16" :src="joyride" />
             </div>
         </div>
     </div>
@@ -101,6 +108,8 @@
 <script setup>
 import { ref } from 'vue';
 import artwork from '~/assets/img/artwork.png';
+import joyride from '~/assets/img/joyride.png';
+import kilroy from '~/assets/img/kilroy.svg';
 
 let success = ref("");
 let errorMessage = ref("");
