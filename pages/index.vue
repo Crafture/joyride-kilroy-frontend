@@ -120,7 +120,7 @@
 
 <script setup>
 import { ref } from 'vue';
-import artwork from '~/assets/img/artwork.png';
+import artwork from '~/assets/img/artwork.jpg';
 import joyride from '~/assets/img/joyride.png';
 import kilroy from '~/assets/img/kilroy.svg';
 import soju from '~/assets/img/soju.png';
@@ -174,7 +174,7 @@ body {
 
 @media (max-width: 800px) {
     .background-element {
-        background-image: url('~/assets/img/artwork.png');
+        background-image: url('~/assets/img/artwork.jpg');
         background-size: cover;
         background-repeat: no-repeat;
         background-position: center;
