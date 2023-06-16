@@ -5,7 +5,7 @@
         </div>
         <div
             class="fixed overflow-scroll sm:static sm:overflow-visible background-element w-screen md:w-1/2 h-screen bg-transparent">
-            <div class="md:h-full w-full flex items-center justify-center px-8 pb-28 pt-12 lg:py-8">
+            <div class="md:h-full w-full flex items-center justify-center px-8 pb-28 pt-6 lg:py-8">
                 <div class="relative w-full max-w-2xl md:h-auto">
                     <div class="relative p-4 bg-prim md:bg-transparent rounded sm:p-5">
                         <div class="flex pb-4 mb-4 rounded-t border-b sm:mb-5 dark:border-gray-600">
