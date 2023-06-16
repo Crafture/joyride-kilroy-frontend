@@ -5,7 +5,7 @@
         </div>
         <div
             class="fixed overflow-scroll sm:static sm:overflow-visible background-element w-screen md:w-1/2 h-screen bg-transparent">
-            <div class="md:h-full w-full flex items-center justify-center px-8 pb-28 pt-6 lg:py-8">
+            <div class="md:h-full w-full flex items-center justify-center px-6 lg:px-12 pb-28 pt-6 lg:py-8">
                 <div class="relative w-full max-w-2xl md:h-auto">
                     <div class="relative p-4 bg-prim md:bg-transparent rounded sm:p-5">
                         <div class="flex pb-4 mb-4 rounded-t border-b sm:mb-5 dark:border-gray-600">
@@ -98,7 +98,18 @@
                                 </div>
 
                             </div>
+                            <div class="flex items-center">
+                                <input id="link-checkbox" type="checkbox" value="" required
+                                    class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600">
+                                <label for="link-checkbox"
+                                    class="ml-2 text-xs font-medium text-gray-900 dark:text-gray-300">Ik ga akkoord met het
+                                    delen van mijn gegevens met Kilroy en wil benaderd worden voor toekomstige
+                                    evenementen
+                                </label>
+                            </div>
                             <div class="mt-8 flex justify-between items-center">
+
+
                                 <button type="submit" class="bg-btn py-2 px-8 text-white rounded-sm">
                                     Registreren
                                 </button>
