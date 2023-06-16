@@ -9,7 +9,13 @@ module.exports = {
         "./node_modules/flowbite.{js,ts}",
     ],
     theme: {
-        extend: {},
+        extend: {
+            colors: {
+                'prim': '#5A1A4E',
+                'input': '#CF94C7',
+                'btn': '#23B3DA'
+            }
+        },
     },
     plugins: [
         require('flowbite/plugin')
