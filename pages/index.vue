@@ -5,7 +5,8 @@
         </div>
         <div
             class="fixed overflow-scroll sm:static sm:overflow-visible background-element w-screen md:w-1/2 h-screen bg-transparent">
-            <div class="md:h-full w-full flex items-center justify-center px-6 lg:px-12 pb-28 pt-6 lg:py-8">
+            <div
+                class="md:h-full w-full flex items-center justify-center px-6 lg:px-12 pb-28 pt-12 lg:py-8 overflow-y-auto">
                 <div class="relative w-full max-w-2xl md:h-auto">
                     <div class="relative p-4 bg-prim md:bg-transparent rounded sm:p-5">
                         <div class="flex pb-4 mb-4 rounded-t border-b sm:mb-5 dark:border-gray-600">
@@ -14,17 +15,20 @@
                             </h3>
                         </div>
                         <div>
-                            <div v-if="!success" v-for="(value, key) in errorMessage" :key="key" class="mb-4">
+                            <div v-if="!success && errorMessage" class="mb-4">
                                 <div role="alert">
                                     <div class="bg-red-500 text-white font-bold rounded-t px-4 py-2">
-                                        Error in {{ key }}:
+                                        Error:
                                     </div>
                                     <div
-                                        class="border border-t-0 border-red-400 rounded-b bg-red-100 px-4 py-3 text-red-700">
-                                        <p>
-                                            {{ value.join(', ') }}
+                                        class="text-sm border border-t-0 border-red-400 rounded-b bg-red-100 px-4 py-3 text-red-700">
+                                        <p class="inline">
+                                            Je bent al geregisteerd. Neem contact op met Livecrowd<a class="text-blue-500"
+                                                href="https://www.livecrowd.com/support" target="_blank">
+                                                [livecrowd.com/support]</a>
                                         </p>
                                     </div>
+
                                 </div>
                             </div>
                             <div v-if="success"
@@ -62,9 +66,10 @@
                                 </div>
                                 <div>
                                     <label for="email" class="block mb-2 text-sm font-medium text-white">E-mail</label>
-                                    <input type="text" name="email" id="email"
+                                    <input type="email" name="email" id="email"
                                         class="border border-gray-300 text-sm rounded focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 bg-input border-gray-600 placeholder-white text-white dark:focus:ring-primary-500 dark:focus:border-primary-500"
-                                        placeholder="voornaam@provider.nl" required="">
+                                        placeholder="voornaam@provider.nl" required=""
+                                        pattern="^[a-zA-Z0-9._%+-]+@([a-zA-Z0-9-]+\.)+[a-zA-Z]{2,}$">
                                 </div>
                                 <div>
                                     <label for="phone" class="block mb-2 text-sm font-medium text-white">Telefoon</label>
@@ -85,16 +90,18 @@
                                 <div>
                                     <label for="email_friend1" class="block mb-2 text-sm font-medium text-white">E-mail
                                         1</label>
-                                    <input type="text" name="email_friend1" id="email_friend1"
+                                    <input type="email" name="email_friend1" id="email_friend1"
                                         class="border border-gray-300 text-sm rounded focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 bg-input border-gray-600 placeholder-white text-white dark:focus:ring-primary-500 dark:focus:border-primary-500"
-                                        placeholder="voornaam@provider.nl" required="">
+                                        placeholder="voornaam@provider.nl" required=""
+                                        pattern="^[a-zA-Z0-9._%+-]+@([a-zA-Z0-9-]+\.)+[a-zA-Z]{2,}$">
                                 </div>
                                 <div>
                                     <label for="email_friend2" class="block mb-2 text-sm font-medium text-white">E-mail
                                         2</label>
-                                    <input type="text" name="email_friend2" id="email_friend2"
+                                    <input type="email" name="email_friend2" id="email_friend2"
                                         class="border border-gray-300 text-sm rounded focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 bg-input border-gray-600 placeholder-white text-white dark:focus:ring-primary-500 dark:focus:border-primary-500"
-                                        placeholder="voornaam@provider.nl" required="">
+                                        placeholder="voornaam@provider.nl" required=""
+                                        pattern="^[a-zA-Z0-9._%+-]+@([a-zA-Z0-9-]+\.)+[a-zA-Z]{2,}$">
                                 </div>
 
                             </div>
@@ -136,7 +143,7 @@ import kilroy from '~/assets/img/kilroy.svg';
 import soju from '~/assets/img/soju.png';
 
 let success = ref("");
-let errorMessage = ref("");
+let errorMessage = ref(false);
 let timerId = ref(null);
 
 const handleSubmit = (event) => {
@@ -160,7 +167,7 @@ const handleSubmit = (event) => {
         .catch((errorResponse) => {
             errorResponse.json().then((error) => {
                 console.error('Error submitting form', error);
-                errorMessage.value = error;
+                errorMessage.value = true;
 
                 clearTimeout(timerId.value);
 
