@@ -9,23 +9,19 @@
                 class="md:h-full w-full flex items-center justify-center px-6 lg:px-12 pb-28 pt-12 lg:py-8 overflow-y-auto">
                 <div class="relative w-full max-w-2xl md:h-auto">
                     <div class="relative p-4 bg-prim md:bg-transparent rounded sm:p-5">
-                        <div class="flex pb-4 mb-4 rounded-t border-b sm:mb-5 dark:border-gray-600">
-                            <h3 class=" text-xl font-semibold text-white">
-                                Win een reis naar Azië ter waarde van € 5000!
-                            </h3>
-                        </div>
-                        <div>
-                            <div v-if="!success && errorMessage" class="mb-4">
+                        <div class="mt-24 ">
+                            <div v-if="!success && errorMessage">
                                 <div role="alert">
                                     <div class="bg-red-500 text-white font-bold rounded-t px-4 py-2">
                                         Error:
                                     </div>
                                     <div
-                                        class="text-sm border border-t-0 border-red-400 rounded-b bg-red-100 px-4 py-3 text-red-700">
+                                        class="mb-4 text-sm border border-t-0 border-red-400 rounded-b bg-red-100 px-4 py-3 text-red-700">
                                         <p class="inline">
-                                            Je bent al geregisteerd. Neem contact op met Livecrowd<a class="text-blue-500"
+                                            Je hebt je al aangemeld voor de winactie.
+                                            Vragen over je aanmelding? Neem contact op met <a class="text-blue-500"
                                                 href="https://www.livecrowd.com/support" target="_blank">
-                                                [livecrowd.com/support]</a>
+                                                Livecrowd.</a>
                                         </p>
                                     </div>
 
@@ -41,6 +37,11 @@
                                 </svg>
                                 <p>You have successfully registered!</p>
                             </div>
+                        </div>
+                        <div class="flex pb-4 mb-4 rounded-t border-b sm:mb-5 dark:border-gray-600">
+                            <h3 class="text-xl font-semibold text-white">
+                                Win een reis naar Azië ter waarde van € 5000!
+                            </h3>
                         </div>
                         <form @submit="handleSubmit">
                             <div class="grid gap-4 mb-4 sm:grid-cols-2">
