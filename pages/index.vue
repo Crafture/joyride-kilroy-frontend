@@ -121,7 +121,7 @@
                         </form>
                     </div>
                     <div class="flex justify-center items-center">
-                        <img class="mt-6 lg:mb-0 md:block h-20 lg:hidden" :src="joyride" />
+                        <img class="mt-6 lg:mb-0 md:block w-full lg:hidden" :src="joyride" />
                     </div>
                 </div>
             </div>
