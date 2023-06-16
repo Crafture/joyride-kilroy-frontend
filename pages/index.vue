@@ -9,8 +9,8 @@
                 class="md:h-full w-full flex items-center justify-center px-6 lg:px-12 pb-28 pt-12 lg:py-8 overflow-y-auto">
                 <div class="relative w-full max-w-2xl md:h-auto">
                     <div class="relative p-4 bg-prim md:bg-transparent rounded sm:p-5">
-                        <div class="mt-24 ">
-                            <div v-if="!success && errorMessage">
+                        <div>
+                            <div v-if="!success && errorMessage" class="mt-24 ">
                                 <div role="alert">
                                     <div class="bg-red-500 text-white font-bold rounded-t px-4 py-2">
                                         Error:
