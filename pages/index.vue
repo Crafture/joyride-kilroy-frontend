@@ -122,7 +122,7 @@
                                 </button>
                                 <div class="flex items-center justify-center">
                                     <img class="h-4 md:h-8 mr-2 md:mr-4" :src="kilroy" />
-                                    <img class="h-4 md:h-8" :src="soju" />
+                                    <img class="h-4 md:h-12" :src="just" />
                                 </div>
                             </div>
                         </form>
@@ -141,7 +141,7 @@ import { ref } from 'vue';
 import artwork from '~/assets/img/artwork.jpg';
 import joyride from '~/assets/img/joyride.png';
 import kilroy from '~/assets/img/kilroy.svg';
-import soju from '~/assets/img/soju.png';
+import just from '~/assets/img/just.svg';
 
 let success = ref("");
 let errorMessage = ref(false);
