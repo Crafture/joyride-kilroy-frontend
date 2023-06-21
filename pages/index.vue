@@ -109,9 +109,9 @@
                             <div class="flex items-center">
                                 <input id="link-checkbox" type="checkbox" value="" required
                                     class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600">
-                                <label for="link-checkbox" class="ml-2 text-xs font-medium text-white">Ik ga akkoord met het
-                                    delen van mijn gegevens met Kilroy en wil benaderd worden voor toekomstige
-                                    evenementen
+                                <label for="link-checkbox" class="ml-2 text-xs font-medium text-white">Door mee te doen aan
+                                    deze winactie, ga ik ermee akkoord dat mijn gegevens worden verstrekt aan KILROY voor
+                                    directe marketingdoeleinden. Je kunt je hier op elk moment voor uitschrijven.
                                 </label>
                             </div>
                             <div class="mt-8 flex justify-between items-center">
