@@ -93,7 +93,7 @@
                                         1</label>
                                     <input type="email" name="email_friend1" id="email_friend1"
                                         class="border border-gray-300 text-sm rounded focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 bg-input border-gray-600 placeholder-white text-white dark:focus:ring-primary-500 dark:focus:border-primary-500"
-                                        placeholder="voornaam@provider.nl" required=""
+                                        placeholder="voornaam@provider.nl"
                                         pattern="^[a-zA-Z0-9._%+-]+@([a-zA-Z0-9-]+\.)+[a-zA-Z]{2,}$">
                                 </div>
                                 <div>
@@ -101,7 +101,7 @@
                                         2</label>
                                     <input type="email" name="email_friend2" id="email_friend2"
                                         class="border border-gray-300 text-sm rounded focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 bg-input border-gray-600 placeholder-white text-white dark:focus:ring-primary-500 dark:focus:border-primary-500"
-                                        placeholder="voornaam@provider.nl" required=""
+                                        placeholder="voornaam@provider.nl"
                                         pattern="^[a-zA-Z0-9._%+-]+@([a-zA-Z0-9-]+\.)+[a-zA-Z]{2,}$">
                                 </div>
 
